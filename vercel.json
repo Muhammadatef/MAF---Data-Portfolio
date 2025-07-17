@@ -1,0 +1,20 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "functions": {
+    "src/app/api/contact/route.ts": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "GITHUB_USERNAME": "Muhammadatef"
+  },
+  "build": {
+    "env": {
+      "GITHUB_USERNAME": "Muhammadatef"
+    }
+  }
+}

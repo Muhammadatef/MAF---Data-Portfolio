@@ -83,8 +83,8 @@ const Certifications = () => {
     {
       title: 'ETL Performance Optimization',
       organization: 'e& (Etisalat)',
-      year: '2024',
-      description: 'Reduced batch ETL processing time from 18 hours to 3 hours using SQL and Spark optimization techniques',
+      year: '2025',
+      description: 'Reduced batch ETLs Pipelines processing time from 18 hours to 3 hours using SQL and Spark optimization techniques',
       icon: TrendingUp
     },
     {
@@ -99,6 +99,13 @@ const Certifications = () => {
       organization: 'Upwork - Freelance',
       year: '2022-2023',
       description: 'Developed and deployed ML models to predict trends with 85% accuracy, earned consistent 5-star feedback for timely deliverables',
+      icon: Award
+    },
+    {
+      title: 'Mentorship Excellence',
+      organization: 'Open Source Roadmap',
+      year: '2022-present',
+      description: 'Led mentorship programs and workshops for aspiring data engineers, contributing to community growth through hands-on guidance and writing technical articles on Medium about key data engineering skills and tools.',
       icon: Award
     }
   ]

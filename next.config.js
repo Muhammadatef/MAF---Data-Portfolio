@@ -1,16 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // Remove output: 'export' for Vercel - it handles this automatically
   images: {
-    unoptimized: true,
+    unoptimized: true, // Keep this for better performance on Vercel
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  // Remove assetPrefix and basePath - not needed for Vercel
   env: {
     GITHUB_USERNAME: 'Muhammadatef',
     GITHUB_TOKEN: process.env.GITHUB_TOKEN,
   },
+  // Add experimental features for better Vercel compatibility
+  experimental: {
+    serverComponentsExternalPackages: ['nodemailer'],
+  },
+  // Disable CSS minification temporarily
+  swcMinify: false,
 }
 
 module.exports = nextConfig

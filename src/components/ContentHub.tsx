@@ -70,26 +70,26 @@ const ContentHub = () => {
       image: '/blog/docker-commands.jpg'
     },
     {
-      title: 'Understanding Apache Kafka for Data Engineering',
-      excerpt: 'Deep dive into Apache Kafka architecture, use cases, and best practices for building real-time data streaming applications...',
+      title: 'Introduction to dbt and Analytics Engineer',
+      excerpt: 'Comprehensive guide to dbt (data build tool) and the role of analytics engineers in modern data teams, covering best practices and implementation strategies...',
       date: '2024-01-01',
       readTime: '10 min read',
-      tags: ['Apache Kafka', 'Streaming', 'Real-time Data', 'Event Processing'],
+      tags: ['dbt', 'Analytics Engineer', 'Data Transformation', 'SQL', 'Data Modeling'],
       views: '4.7K',
       likes: '298',
-      url: 'https://medium.com/@muhamedfahmy7474/understanding-apache-kafka-for-data-engineering',
-      image: '/blog/kafka-guide.jpg'
+      url: 'https://medium.com/towardsdev/introduction-to-dbt-and-analytics-engineer-69b68f5a9e79',
+      image: '/blog/dbt-analytics.jpg'
     },
     {
-      title: 'Modern Data Stack: Tools and Technologies for 2024',
-      excerpt: 'Comprehensive overview of the modern data stack including cloud platforms, orchestration tools, and emerging technologies...',
+      title: 'Important 4 Data Engineering Skills That Don\'t Get the Proper Hype',
+      excerpt: 'Exploring the underrated but crucial skills every data engineer should master, including soft skills, business acumen, and technical fundamentals often overlooked...',
       date: '2023-12-28',
-      readTime: '15 min read',
-      tags: ['Modern Data Stack', 'Cloud', 'Data Tools', 'Technology Stack'],
+      readTime: '8 min read',
+      tags: ['Data Engineering', 'Career Development', 'Skills', 'Professional Growth'],
       views: '6.1K',
       likes: '412',
-      url: 'https://medium.com/@muhamedfahmy7474/modern-data-stack-tools-and-technologies-for-2024',
-      image: '/blog/modern-stack.jpg'
+      url: 'https://medium.com/art-of-data-engineering/important-4-data-engineering-skills-that-dont-get-the-proper-hype-cc4f3281a4bf',
+      image: '/blog/underrated-skills.jpg'
     }
   ]
 

@@ -9,6 +9,7 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 import ContentHub from '@/components/ContentHub'
+import Mentorship from '@/components/Mentorship'
 import Certifications from '@/components/Certifications'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -63,6 +64,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <ContentHub />
+        <Mentorship />
         <Certifications />
         <Contact />
       </motion.div>
