@@ -13,17 +13,32 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ['nodemailer'],
   },
-  // Disable CSS minification to fix build errors
+  // Disable ALL optimizations to fix build errors
   swcMinify: false,
-  // Disable CSS optimization
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.optimization.minimizer = config.optimization.minimizer.filter(
-        (plugin) => plugin.constructor.name !== 'CssMinimizerPlugin'
-      );
+  compiler: {
+    // Disable CSS optimization completely
+    removeConsole: false,
+  },
+  // Disable CSS optimization completely
+  webpack: (config, { isServer, dev }) => {
+    // Remove all CSS optimization plugins
+    config.optimization.minimizer = config.optimization.minimizer.filter(
+      (plugin) => 
+        plugin.constructor.name !== 'CssMinimizerPlugin' &&
+        plugin.constructor.name !== 'OptimizeCSSAssetsPlugin'
+    );
+    
+    // Disable CSS optimization in production
+    if (!dev) {
+      config.optimization.minimize = false;
     }
+    
     return config;
   },
+  // Disable source maps and other optimizations
+  productionBrowserSourceMaps: false,
+  poweredByHeader: false,
+  compress: false,
 }
 
 module.exports = nextConfig

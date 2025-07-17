@@ -18,6 +18,22 @@ import {
 import { SiPowerbi, SiApachespark, SiPython, SiAmazonaws, SiMicrosoftazure, SiDocker } from 'react-icons/si'
 import NovyProPanel from './NovyProPanel'
 
+interface Project {
+  id: string
+  title: string
+  description: string
+  category: string
+  tags: string[]
+  image: string
+  github: string
+  demo?: string
+  tech: Array<{ name: string; icon: any }>
+  features: string[]
+  metrics: Record<string, string>
+  powerbi?: string
+  novypro?: string
+}
+
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedProject, setSelectedProject] = useState<string | null>(null)
@@ -30,7 +46,7 @@ const Projects = () => {
     { id: 'cloud', name: 'Cloud Solutions', icon: Cloud },
   ]
 
-  const projects = [
+  const projects: Project[] = [
     // Data Engineering Projects
     {
       id: 'data-engineering-roadmap',
