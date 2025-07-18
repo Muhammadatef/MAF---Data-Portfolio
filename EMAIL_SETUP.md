@@ -23,7 +23,7 @@ cp .env.example .env.local
 ```env
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-specific-password
-RECIPIENT_EMAIL=muhamedfahmy7474@gmail.com
+RECIPIENT_EMAIL=memail@gmail.com
 ```
 
 ## 3. Alternative Email Providers
@@ -32,7 +32,7 @@ RECIPIENT_EMAIL=muhamedfahmy7474@gmail.com
 ```env
 EMAIL_USER=your-email@outlook.com
 EMAIL_PASS=your-password
-RECIPIENT_EMAIL=muhamedfahmy7474@gmail.com
+RECIPIENT_EMAIL=email@gmail.com
 ```
 
 You'll also need to modify the transporter configuration in `src/app/api/contact/route.ts`:
